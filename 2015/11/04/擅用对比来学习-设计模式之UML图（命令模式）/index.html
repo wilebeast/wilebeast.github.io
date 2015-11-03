@@ -3,21 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>我是如何一个月学会cpp的 | different thinker</title>
+  <title>擅用对比来学习---设计模式之UML图（命令模式） | different thinker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="笔者现在就职于一家棋牌游戏公司，server组的，使用cpp开发。这是我的第二份工作，这之前我是做了大概3年的嵌入式开发，纯C语言开发,完全没有面向对象的开发经验,但是再离开之后，我决定做一些其他的东西（互联网server）。这个转型之快，我自己也没有想到。因此觉得有必要写下来。
-1.失败的尝试c++ primer,cpp程序设计，一开始也是狂啃，好书是好书，不过当时没有实践（大忌）,所以也是囫囵">
+  <meta name="description" content="学习是要讲究方法的，对比是很好的方式。同一件事情，在不同的书籍（都比较好）中，往往会有不同的表达方式，二者的交集，及时最核心的本质所在。因此笔者学习一件新的东西时，往往不止参考一本书籍或者网站。
+举个栗子：
+笔者在学习设计模式的命令模式时，就采用了两本参考书中的表述，在两种不同的表达方式中，加深了对该模式的理解。对应的示意图分别如下：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我是如何一个月学会cpp的">
-<meta property="og:url" content="http://wilebeast.github.io/2015/10/20/how-i-master-cpp-in-a-month/index.html">
+<meta property="og:title" content="擅用对比来学习---设计模式之UML图（命令模式）">
+<meta property="og:url" content="http://wilebeast.github.io/2015/11/04/擅用对比来学习-设计模式之UML图（命令模式）/index.html">
 <meta property="og:site_name" content="different thinker">
-<meta property="og:description" content="笔者现在就职于一家棋牌游戏公司，server组的，使用cpp开发。这是我的第二份工作，这之前我是做了大概3年的嵌入式开发，纯C语言开发,完全没有面向对象的开发经验,但是再离开之后，我决定做一些其他的东西（互联网server）。这个转型之快，我自己也没有想到。因此觉得有必要写下来。
-1.失败的尝试c++ primer,cpp程序设计，一开始也是狂啃，好书是好书，不过当时没有实践（大忌）,所以也是囫囵">
-<meta property="og:updated_time" content="2015-10-24T03:31:58.317Z">
+<meta property="og:description" content="学习是要讲究方法的，对比是很好的方式。同一件事情，在不同的书籍（都比较好）中，往往会有不同的表达方式，二者的交集，及时最核心的本质所在。因此笔者学习一件新的东西时，往往不止参考一本书籍或者网站。
+举个栗子：
+笔者在学习设计模式的命令模式时，就采用了两本参考书中的表述，在两种不同的表达方式中，加深了对该模式的理解。对应的示意图分别如下：">
+<meta property="og:image" content="https://github.com/wilebeast/hexo/blob/master/pic/design_cmd_mod.png">
+<meta property="og:image" content="https://github.com/wilebeast/hexo/blob/master/pic/design_cmd_mod1.png">
+<meta property="og:updated_time" content="2015-11-03T16:29:56.353Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我是如何一个月学会cpp的">
-<meta name="twitter:description" content="笔者现在就职于一家棋牌游戏公司，server组的，使用cpp开发。这是我的第二份工作，这之前我是做了大概3年的嵌入式开发，纯C语言开发,完全没有面向对象的开发经验,但是再离开之后，我决定做一些其他的东西（互联网server）。这个转型之快，我自己也没有想到。因此觉得有必要写下来。
-1.失败的尝试c++ primer,cpp程序设计，一开始也是狂啃，好书是好书，不过当时没有实践（大忌）,所以也是囫囵">
+<meta name="twitter:title" content="擅用对比来学习---设计模式之UML图（命令模式）">
+<meta name="twitter:description" content="学习是要讲究方法的，对比是很好的方式。同一件事情，在不同的书籍（都比较好）中，往往会有不同的表达方式，二者的交集，及时最核心的本质所在。因此笔者学习一件新的东西时，往往不止参考一本书籍或者网站。
+举个栗子：
+笔者在学习设计模式的命令模式时，就采用了两本参考书中的表述，在两种不同的表达方式中，加深了对该模式的理解。对应的示意图分别如下：">
   
     <link rel="alternative" href="/atom.xml" title="different thinker" type="application/atom+xml">
   
@@ -67,16 +72,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-how-i-master-cpp-in-a-month" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-擅用对比来学习-设计模式之UML图（命令模式）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/20/how-i-master-cpp-in-a-month/" class="article-date">
-  <time datetime="2015-10-20T15:13:22.000Z" itemprop="datePublished">2015-10-20</time>
+    <a href="/2015/11/04/擅用对比来学习-设计模式之UML图（命令模式）/" class="article-date">
+  <time datetime="2015-11-03T16:21:43.000Z" itemprop="datePublished">2015-11-04</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -85,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我是如何一个月学会cpp的
+      擅用对比来学习---设计模式之UML图（命令模式）
     </h1>
   
 
@@ -93,19 +94,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>笔者现在就职于一家棋牌游戏公司，server组的，使用cpp开发。这是我的第二份工作，<br>这之前我是做了大概3年的嵌入式开发，纯C语言开发,完全没有面向对象的开发经验,但<br>是再离开之后，我决定做一些其他的东西（互联网server）。这个转型之快，我自己也<br>没有想到。因此觉得有必要写下来。</p>
-<h3 id="1-失败的尝试">1.失败的尝试</h3><p>c++ primer,cpp程序设计，一开始也是狂啃，好书是好书，不过当时没有实践（大忌）,<br>所以也是囫囵吞枣，看到后面愈发糊涂，继承&amp;多态是难点，网上的帖子也是看得云里<br>雾里的。</p>
-<h3 id="2-反汇编解密">2.反汇编解密</h3><p>因为嵌入式的开发经历，让我有了反汇编的基础（笔者专门学过汇编）。再者，我当时认<br>为cpp仅是对c的一种封装而已，所以决定尝试反汇编来一探究竟。虽然不能完全看懂所有<br>的反汇编代码，但是关键的地方还是让笔者抓住了，继承的关键在于隐藏的this指针，而<br>多态的关键在于虚函数表。</p>
-<h3 id="反思总结">反思总结</h3><ol><br><li>语言的教材，光看是没用的，还要上机实验才行</li><br><li>汇编还是很有用的，能够让程序员看到语言的本质</li><br></ol>
+        <p>学习是要讲究方法的，对比是很好的方式。同一件事情，在不同的书籍（都比较好）中，往往会有不同的表达方式，二者的交集，及时最核心的本质所在。因此笔者学习一件新的东西时，往往不止参考一本书籍或者网站。</p>
+<p>举个栗子：</p>
+<p>笔者在学习设计模式的命令模式时，就采用了两本参考书中的表述，在两种不同的表达方式中，加深了对该模式的理解。对应的示意图分别如下：<br><img src="https://github.com/wilebeast/hexo/blob/master/pic/design_cmd_mod.png" alt="Alt text"><br><img src="https://github.com/wilebeast/hexo/blob/master/pic/design_cmd_mod1.png" alt="Alt text"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wilebeast.github.io/2015/10/20/how-i-master-cpp-in-a-month/" data-id="cigjlcyun000dxwcfawbl09d5" class="article-share-link">Share</a>
+      <a data-url="http://wilebeast.github.io/2015/11/04/擅用对比来学习-设计模式之UML图（命令模式）/" data-id="cigjlcyul000axwcfauh8a0pv" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cpp/">cpp</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
 
     </footer>
   </div>
@@ -113,19 +112,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/10/23/过程比结果重要/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          过程比结果重要
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/10/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/11/03/Companionship-is-the-best-love/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">Companionship is the best love</div>
     </a>
   
 </nav>
@@ -136,7 +126,7 @@
  
  <section id="comments">
    <!-- 多说评论框 start -->
-   <div class="ds-thread" data-thread-key="post-how-i-master-cpp-in-a-month" data-title="我是如何一个月学会cpp的" data-url="http://wilebeast.github.io/2015/10/20/how-i-master-cpp-in-a-month/"></div>
+   <div class="ds-thread" data-thread-key="post-擅用对比来学习-设计模式之UML图（命令模式）" data-title="擅用对比来学习---设计模式之UML图（命令模式）" data-url="http://wilebeast.github.io/2015/11/04/擅用对比来学习-设计模式之UML图（命令模式）/"></div>
    <!-- 多说评论框 end -->
    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
    <script type="text/javascript">
